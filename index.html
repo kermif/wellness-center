@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="home.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
 </head>
 
 <body>  
@@ -12,9 +16,9 @@
         <a href="#" class = "logo">Wellness Center</a>
         <ul>
             <li><a class="navBar" href="./index.html">Home</a></li>
-            <li><a class="navBar" href="./faq.html">FAQ</a></li>
+            <li><a class="navBar" href="./faq.html">FAQs</a></li>
         </ul>
-            </nav>
+    </nav>
     <!--http://127.0.0.1:5500/
     #2f2d3b
     #6768ab
@@ -24,15 +28,54 @@
     -->  
     <div class="row">
         <div class="column1">
-            <h1>Online Mental Health Center</h1>
+            <img src="brain.png">
         </div>
         <div class="column2">
             <h1>The Wellness Center: Where Hope Meets Healing.</h1>
             
+            
         </div>
     </div>
-
-    
+    <h6> Welcome to The Wellness Center, your trusted
+                    resource for understanding mental health disorders
+                    and finding pathways to better mental wellness. </h6>
+    <div class="row">
+        <div class="column3">
+            <h2>Online Therapy</h2>
+            <p>Check Out Our Site for Therapy Resources!</p>
+            <a href="#therapy"><button>Learn More</button></a>
+            
+        </div>
+        <div class="column4">
+            <h2>Assessments</h2>
+            <p>Online screening is one of the quickest and easiest ways to determine whether you are experiencing symptoms of a mental health condition. 
+                Mental health conditions, such as depression or anxiety, are real, common and treatable. Recovery is typically possible, so don't worry.
+            </p> 
+            <a href="https://screening.mhanational.org/screening-tools/">
+              </a>
+            <button onclick="showpopup()">Take Assessments</button>
+            <br>
+            <div id="popup" class="popup">
+                <button onclick="hidepopup()" class="hide">x</button><br>
+                <a href="https://screening.mhanational.org/screening-tools/depression/?ref">Depression Test
+                </a><br> 
+                <a href="https://screening.mhanational.org/screening-tools/adhd/?ref">ADHD Test
+                </a><br> 
+                <a href="https://screening.mhanational.org/screening-tools/anxiety/?ref">Anxiety Test
+                </a><br> 
+                <a href="https://screening.mhanational.org/screening-tools/ptsd/?ref">PTSD Test
+                </a><br> 
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <img src="HoldingHands.png" alt="A ground of people holding hands">
+    </div>
+    <div>
+        <h2 id="therapy">How Online Therapy Works</h2>
+        <p>Getting in touch with mental health professions can help you improve your mental conditions, even sometimes your physical wellbeing. Various studies have shown that therapy can greatly help anyone slowly advance to a life without psychological problems.</p>
+        <p>some text</p>
+    </div>
     
 
 

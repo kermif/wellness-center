@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="faq.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="#" class = "logo">Wellness Center</a>
+        <ul>
+            <li><a class="navBar" href="./index.html">Home</a></li>
+            <li><a class="navBar" href="./faq.html">FAQs</a></li>
+        </ul>
+    </nav>
+    <br><h1>Frequently Asked Questions</h1>
+    <div class = "faq">
+        <button class = "question">What is mental health?</button>
+        <div class = "answer">
+            <br><p>Mental health includes our emotional, psychological, and social well-being. 
+                It affects how we think, feel, and act, and helps determine how we handle stress, relate to others, and make choices.
+            </p>
+        </div>
+    </div>
+    <div class = "faq">
+        <button class = "question">How do I know if I have a mental illness?</button>
+        <div class = "answer">
+            <br><p>If you're experiencing persistent changes in your thoughts, emotions, or behaviors
+                that are disrupting your daily life, it might be indicative of a mental illness. 
+                Consulting with a mental health professional can help determine if you have a mental
+                disorder and guide you towards the appropriate treatment.</p>
+        </div>
+    </div>
+    <div class = "faq">
+        <button class = "question">What are symptoms of depression and anxiety?</button>
+        <div class = "answer">
+            <br><p>Symptoms of depression can include persistent sadness, loss of interest in activities, changes in appetite or sleep, and feelings of worthlessness. 
+                Anxiety symptoms often involve overwhelmedness, restlessness, difficulty concentrating, and physical symptoms like rapid heartbeat or trembling.</p>
+        </div>
+    </div>
+    <div class = "faq">
+        <button class = "question">Where can I get help for my mental health?</button> 
+        <div class = "answer">
+            <br><p>If you are a student, you can contact your school counselor for free, though limited, guidance for your mental health.
+                If you would like to take it one step further, your can meet with a professional therapist or go to helpful websites, like The Wellness Center!</p>
+        </div>
+    </div>
+    <div class = "faq">
+        <button class = "question">How can I talk to someone about my mental health?</button>
+        <div class = "answer">
+            <br><p>First you should choose someone you trust to talk to, such as a parent/guardian, other family members, or close friends.
+                 You can also contact a therapist if you prefer a professional. Be honest to your chosen person and ask for support and kindness 
+                 in your journey to recovery.</p>
+        </div>
+
+
+         <!--JavaScript part-->
+         <script>
+            let questions = document.querySelectorAll(".question");
+            questions.forEach(function(question) {
+                question.addEventListener("click", function() {
+                let answer = this.nextElementSibling;
+                answer.classList.toggle("active");
+                });
+            });
+        </script>
+</body>
+</html>

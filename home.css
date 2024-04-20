@@ -6,6 +6,7 @@
 nav{
     background-color: #9389bd;
     display: flex;
+    align-items: center;
 }
 ul{
     display: flex;
@@ -16,11 +17,8 @@ ul{
 }
 li{
     list-style-type: none;
-    padding: 0 3rem;
+    padding: 1rem 4rem;
     font-size: 1.5rem;
-    vertical-align: middle;
-    align-items: center;
-    height: 100%;
 }
 ul li:hover{
     font-weight: 900;
@@ -30,9 +28,11 @@ a{
     text-decoration: none;
 }
 .logo{
-    font-size: 2rem;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    width: 20%;
     color: #2f2d3b;
-    border: 1px black solid;
+    font-family: "Jersey 25", sans-serif;
 }
 h1 {
     line-height: 100px;
@@ -49,11 +49,91 @@ body {
     background-color: #6768ab;
     width: 50%;
     float: left;
-    height: 500px;
+    height: 430px;
 }
 .column2 {
     background-color: #5e4d9b;
     width: 50%;
     float: left;
+    height: 430px;
+    color:#cfcad1;
+}
+.column3 {
+    width:50%;
+    float:left;
+    height:300px;
+}
+.column4{
+    width:50%;
+    float:left;
+    height:300px;
+}
+.column4 h2,
+.column3 h2 {
+    font-size: 1.75rem;
+}
+.column4 p,
+.column3 p {
+    font-size: 1.2rem;
+}
+img {
+    float: right;
+    clear: both;
+}
+center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h6 {
+    font-size: 25px;
+    margin: 60px 60px 80px 60px;
+    padding-top: 430px;
+    text-align:center;
+    color: #2f2d3b;
+    font-weight:normal;
+}
+p {
+    font-size: 16px;
+    margin: 20px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+button {
+    display: block;
+    margin:auto;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Lucida Grande', monospace;
+    font-size: 16px;
+    color:#cfcad1;
+    background-color: #5e4d9b;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+    border:none;
+    border-radius: 30px;
+}
+.popup {
+    visibility: hidden;
+    background-color:#9389bd;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    height: 120px;
+    display: block;
+    margin: auto;
+}
+button.hide {
+    float:right;
+    padding:5px;
+    font-size:12px;
+    color: #2f2d3b;
+    background-color: #6768ab;
+    color: #cfcad1;
+}
+.asdf {
     height: 500px;
+    background-color:#9389bd;
 }
