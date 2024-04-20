@@ -58,25 +58,32 @@ body {
     height: 430px;
     color:#cfcad1;
 }
-.column3 {
+.column3, .column4 {
     width:50%;
     float:left;
     height:300px;
 }
-.column4{
-    width:50%;
-    float:left;
-    height:300px;
+.column5, .column6 {
+    width: 50%;
+    float: left;
+    height:600px;
+    background-color: #9389bd;
+    text-align: center;
+    z-index: 0;
+    position: relative;
 }
+
 .column4 h2,
-.column3 h2 {
+.column3 h2, 
+.section3 h2{
     font-size: 1.75rem;
 }
 .column4 p,
-.column3 p {
+.column3 p,
+.section3 p {
     font-size: 1.2rem;
 }
-img {
+.column1 img {
     float: right;
     clear: both;
 }
@@ -88,11 +95,17 @@ center {
 }
 h6 {
     font-size: 25px;
-    margin: 60px 60px 80px 60px;
+    margin: 60px 60px 60px 60px;
     padding-top: 430px;
     text-align:center;
     color: #2f2d3b;
     font-weight:normal;
+}
+h6.people {
+    padding-top: 0px;
+}
+h6.hotline {
+    padding-top: 0px;
 }
 p {
     font-size: 16px;
@@ -101,7 +114,12 @@ p {
 }
 h2 {
     text-align: center;
+    padding-top: 20px;
 }
+h2.therapy {
+    padding-top: 90px;
+}
+
 button {
     display: block;
     margin:auto;
@@ -117,13 +135,16 @@ button {
 }
 .popup {
     visibility: hidden;
-    background-color:#9389bd;
+    background-color:#5e4d9b;
     border-radius: 20px;
     text-align: center;
     width: 300px;
     height: 120px;
     display: block;
     margin: auto;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
 }
 button.hide {
     float:right;
@@ -133,7 +154,15 @@ button.hide {
     background-color: #6768ab;
     color: #cfcad1;
 }
-.asdf {
-    height: 500px;
-    background-color:#9389bd;
+.section2 {
+    height: 50rem;
+    width: 100%;
+}
+.section3 {
+    width: 80%;
+    margin: 3rem auto;
+}
+a{
+    color:inherit;
+    color:#cfcad1;
 }
